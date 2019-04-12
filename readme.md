@@ -1,6 +1,6 @@
 # bradtraversy-projects-collection
 
-This repo will be dedicated to all the projects I've done from Brad Traversy's tutorials. I absolutely love his stuff and the way he teaches. These projects are both from his courses and YouTube video, both of which feature a lot of overwhelming content. He goes over everything in great detail and always opens your eyes to new things.
+This repo will be dedicated to all the projects I've done from Brad Traversy's tutorials. I absolutely love his stuff and the way he teaches. These projects are both from his courses and YouTube video, both of which feature a lot of overwhelming content. He goes over everything in great detail and always opens your eyes to new things. A link to his courses can be found [here](https://www.udemy.com/user/brad-traversy/).
 
 ## todotask-app (modern-js)
 
@@ -12,7 +12,7 @@ Interesting features:
 - Shows how while loop is faster than clearing the innerHTML.
 - Uses DOMContentLoaded to trigger task loading.
 
-The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-todotask-app)**.
+The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-todotask-app/index.html)**.
 
 ## loan-calc-app (modern-js)
 
@@ -23,7 +23,7 @@ Interesting features:
 - Error HTML object template injected into the dom.
 - Timeout looks to remove the error by class lookup.
 
-The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-loan-calc-app/)**.
+The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-loan-calc-app/index.html)**.
 
 ## number-guesser (modern-js)
 
@@ -34,4 +34,4 @@ Interesting features:
 - use of 'className += 'someName' - very interesting.
 - input validation conditions.
 
-A link to his course can be found [here](https://www.udemy.com/modern-javascript-from-the-beginning/).
+The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-number-guesser/index.html)**.
