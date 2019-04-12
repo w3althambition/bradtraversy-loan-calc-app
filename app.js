@@ -20,11 +20,27 @@ const showError = (err) => {
   setTimeout(clearError, 3000);
 };
 
-const calcResults = (e) => {
-  e.preventDefault();
-  console.log('calculating...');
+// When you submit the form. This gets triggered with true.
+// Once timeout is done. This gets triggered wit false.
+const toggleCalcLoader = (bool) => {
+  if (bool === true) {
+    // Hide Results - Show Loading.
+    document.getElementById('results').style.display = 'none';
+    document.getElementById('loading').style.display = 'block';
+  } else {
+    // Show Loading - Hide Results.
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('loading').style.display = 'none';
+  }
+};
 
-  // UI vars
+// If we get error in the fields - this removes loader.
+const hideCalcLoader = () => {
+  document.getElementById('results').style.display = 'none';
+};
+
+const calcResults = () => {
+  // UI vars.
   const amount = document.getElementById('amount');
   const interest = document.getElementById('interest');
   const years = document.getElementById('years');
@@ -32,21 +48,36 @@ const calcResults = (e) => {
   const totalPayment = document.getElementById('total-payment');
   const totalInterest = document.getElementById('total-interest');
 
+  // Loan figures.
   const principal = parseFloat(amount.value);
   const calculatedInterest = parseFloat(interest.value) / 100 / 12;
   const calculatedPayments = parseFloat(years.value) * 12;
 
-  // compute montly payments.
+  // Compute montly payments.
   const x = Math.pow(1 + calculatedInterest, calculatedPayments);
   const monthly = (principal * x * calculatedInterest) / (x - 1);
 
+  // Finds whether a value is a legal finite number.
   if (isFinite(monthly)) {
+    // Numbers are correct - do calculation.
     montlyPayment.value = monthly.toFixed(2);
     totalPayment.value = (monthly * calculatedPayments).toFixed(2);
-    totalInterest.value = ((monthly * calculatedPayments) - principal).toFixed(2);
+    totalInterest.value = (monthly * calculatedPayments - principal).toFixed(2);
+    // Show results.
+    toggleCalcLoader(false);
   } else {
+    // Error - numbers are wrong.
+    hideCalcLoader();
     showError('Please check your numbers.');
   }
 };
 
-loanForm.addEventListener('submit', calcResults);
+const loanCalEventHandle = (e) => {
+  e.preventDefault();
+  // Show loading screen.
+  toggleCalcLoader(true);
+  // After 1sec show reuslt.
+  setTimeout(calcResults, 1000);
+};
+
+loanForm.addEventListener('submit', loanCalEventHandle);
