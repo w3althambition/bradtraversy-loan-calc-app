@@ -94,7 +94,7 @@ const clearAllTasks = () => {
     taskList.removeChild(taskList.firstChild);
   }
 
-  // Accroding to: https://jsperf.com/innerhtml-vs-removechild/47
+  // According to: https://jsperf.com/innerhtml-vs-removechild/47
   clearAllTaskFromLocalStorage();
 };
 

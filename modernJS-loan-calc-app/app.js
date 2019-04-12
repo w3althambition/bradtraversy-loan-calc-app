@@ -44,7 +44,7 @@ const calcResults = () => {
   const amount = document.getElementById('amount');
   const interest = document.getElementById('interest');
   const years = document.getElementById('years');
-  const montlyPayment = document.getElementById('montly-payment');
+  const monthlyPayment = document.getElementById('monthly-payment');
   const totalPayment = document.getElementById('total-payment');
   const totalInterest = document.getElementById('total-interest');
 
@@ -53,14 +53,14 @@ const calcResults = () => {
   const calculatedInterest = parseFloat(interest.value) / 100 / 12;
   const calculatedPayments = parseFloat(years.value) * 12;
 
-  // Compute montly payments.
+  // Compute monthly payments.
   const x = Math.pow(1 + calculatedInterest, calculatedPayments);
   const monthly = (principal * x * calculatedInterest) / (x - 1);
 
   // Finds whether a value is a legal finite number.
   if (isFinite(monthly)) {
     // Numbers are correct - do calculation.
-    montlyPayment.value = monthly.toFixed(2);
+    monthlyPayment.value = monthly.toFixed(2);
     totalPayment.value = (monthly * calculatedPayments).toFixed(2);
     totalInterest.value = (monthly * calculatedPayments - principal).toFixed(2);
     // Show results.
@@ -76,7 +76,7 @@ const loanCalEventHandle = (e) => {
   e.preventDefault();
   // Show loading screen.
   toggleCalcLoader(true);
-  // After 1sec show reuslt.
+  // After 1sec show result.
   setTimeout(calcResults, 1000);
 };
 
