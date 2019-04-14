@@ -35,3 +35,14 @@ Interesting features:
 - input validation conditions.
 
 The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-number-guesser/index.html)**.
+
+## modernJS-book-list-app (modern-js)
+
+This project drills into how we might apply the principals of object-oriented programming into an actual project. As a whole, this further opens my eyes to the possible uses for classes, static classes, etc. Overall the application of OOP is not perfect, this isn't some amazingly well thought out application that when you look into the logic, it blows your mind away. No. It's a tutorial, but it's one of the best tutorials in the topic out there in my opinion.
+
+Interesting features:
+
+- Use of object-oriented programming
+- ^^ what more would you need.
+
+The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-book-list-app/index.html)**
