@@ -49,10 +49,10 @@ The completed website can be viewed **[here](https://w3althambition.github.io/br
 
 ## modernJS_joke_gen
 
-This is a simple project which covers the xhr object to make calls the Chuck Norris jokes generator. You can make a request for any number of jokes. These jokes get injected into the page after a successful response. It's interesting how well supported this API is, but the sytnax is much longer and confusing than using something like axios or fetch with promises.
+This is a simple project which covers the xhr object to make calls the Chuck Norris jokes generator. You can make a request for any number of jokes. These jokes get injected into the page after a successful response. It's interesting how well supported this API is, but the syntax is old, much longer and confusing than using something like axios or fetch with promises.
 
 Interesting features:
 
-- The use of XMLHttpRequest API.
+- The use of XMLHttpRequest object.
 
 The completed website can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-book-list-app/index.html)**
