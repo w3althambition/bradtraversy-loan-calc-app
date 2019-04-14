@@ -12,7 +12,7 @@ Interesting features:
 - Shows how while loop is faster than clearing the innerHTML.
 - Uses DOMContentLoaded to trigger task loading.
 
-The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-todotask-app/index.html)**.
+The completed website can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-todotask-app/index.html)**.
 
 ## loan-calc-app (modern-js)
 
@@ -23,7 +23,7 @@ Interesting features:
 - Error HTML object template injected into the dom.
 - Timeout looks to remove the error by class lookup.
 
-The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-loan-calc-app/index.html)**.
+The completed website can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-loan-calc-app/index.html)**.
 
 ## number-guesser (modern-js)
 
@@ -34,7 +34,7 @@ Interesting features:
 - use of 'className += 'someName' - very interesting.
 - input validation conditions.
 
-The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-number-guesser/index.html)**.
+The completed website can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-number-guesser/index.html)**.
 
 ## modernJS-book-list-app (modern-js)
 
@@ -45,4 +45,14 @@ Interesting features:
 - Use of object-oriented programming
 - ^^ what more would you need.
 
-The web app can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-book-list-app/index.html)**
+The completed website can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-book-list-app/index.html)**
+
+## modernJS_joke_gen
+
+This is a simple project which covers the xhr object to make calls the Chuck Norris jokes generator. You can make a request for any number of jokes. These jokes get injected into the page after a successful response. It's interesting how well supported this API is, but the sytnax is much longer and confusing than using something like axios or fetch with promises.
+
+Interesting features:
+
+- The use of XMLHttpRequest API.
+
+The completed website can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-book-list-app/index.html)**
