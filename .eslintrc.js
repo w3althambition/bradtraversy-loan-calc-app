@@ -27,6 +27,7 @@ module.exports = {
     'spaced-comment': 1,
     'class-methods-use-this': 1,
     'no-plusplus': 0,
+    'class-methods-use-this': 0,
     indent: 0
   }
 };
