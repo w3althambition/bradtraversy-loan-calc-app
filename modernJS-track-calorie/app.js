@@ -23,6 +23,23 @@ const ItemCtrl = (function () {
     getItems() {
       return data.items;
     },
+    addItem(name, calories) {
+      let ID;
+      // Create new item ID (auto increment)
+      if (data.items.length > 0) {
+        ID = data.items[data.items.length - 1].id + 1;
+      } else {
+        ID = 0;
+      }
+      // convert the calories to string to number.
+      const calorieInt = parseInt(calories, 10);
+      // Create a new item using our details.
+      const newItem = new Item(ID, name, calorieInt);
+      // Add new item to the items array.
+      data.items.push(newItem);
+      // return new item for further use.
+      return newItem;
+    },
     logData() {
       return data;
     },
@@ -32,7 +49,10 @@ const ItemCtrl = (function () {
 // UI Controller
 const UICtrl = (function () {
   const UISelectors = {
+    itemCaloriesInput: '#item-calories',
+    itemNameInput: '#item-name',
     itemList: '#item-list',
+    addBtn: '.add-btn',
   };
 
   // Public methods
@@ -53,19 +73,51 @@ const UICtrl = (function () {
       // Inject placeholder list items
       document.querySelector(UISelectors.itemList).innerHTML = html;
     },
+
+    getItemInput() {
+      return {
+        name: document.querySelector(UISelectors.itemNameInput).value,
+        calories: document.querySelector(UISelectors.itemCaloriesInput).value,
+      };
+    },
+
+    getSelectors() {
+      return UISelectors;
+    },
   };
 }());
 
 // App Controller
 const App = (function (_ItemCtrl, _UICtrl) {
+  // Add Item submit
+  const itemAddSubmit = function (e) {
+    // Get form input from UI Controller
+    const input = UICtrl.getItemInput();
+    // Check the name and calorie input.
+    if (input.name !== '' && input.calories !== '') {
+      // reference add item
+      const newItem = ItemCtrl.addItem(input.name, input.calories);
+    }
+    e.preventDefault();
+  };
+
+  // Load initial event listeners
+  const loadEventListeners = function () {
+    // Get UI selectors
+    const UISelectors = _UICtrl.getSelectors();
+    // Add item event
+    document.querySelector(UISelectors.addBtn).addEventListener('click', itemAddSubmit);
+  };
+
   // Public methods
   return {
     init() {
       // Fetch items from data structure.
       const items = ItemCtrl.getItems();
-
       // Populate list with items.
       _UICtrl.populateItemList(items);
+      // Load event listeners.
+      loadEventListeners();
     },
   };
 }(ItemCtrl, UICtrl));
