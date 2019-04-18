@@ -13,7 +13,11 @@ const ItemCtrl = (function () {
 
   // Data Structure
   const data = {
-    items: [{ id: 0, name: 'Steak Dinner', calories: 1200 }, { id: 1, name: 'Cookie', calories: 400 }, { id: 2, name: 'Eggs', calories: 300 }],
+    items: [
+      /* { id: 0, name: 'Steak Dinner', calories: 1200 },
+      { id: 1, name: 'Cookie', calories: 400 },
+      { id: 2, name: 'Eggs', calories: 300 } */
+    ],
     currentItem: null,
     totalCalories: 0,
   };
@@ -81,6 +85,35 @@ const UICtrl = (function () {
       };
     },
 
+    addListItem(item) {
+      // Show the list.
+      document.querySelector(UISelectors.itemList).style.display = 'block';
+      // Create li element
+      const li = document.createElement('li');
+      // Add it's class
+      li.className = 'collection-item';
+      // Add the id.
+      li.id = `item-${item.id}`;
+      // Add the html.
+      li.innerHTML = `
+        <strong>${item.name}: </strong> <em>${item.calories} Calories</em>
+        <a href="#" class="secondary-content">
+          <i class="edit-item fa fa-pencil"></i>
+        </a>
+      `;
+      // Inject the item into the dom.
+      document.querySelector(UISelectors.itemList).insertAdjacentElement('beforeend', li);
+    },
+
+    clearInputFields() {
+      document.querySelector(UISelectors.itemNameInput).value = '';
+      document.querySelector(UISelectors.itemCaloriesInput).value = '';
+    },
+
+    hideList() {
+      document.querySelector(UISelectors.itemList).style.display = 'none';
+    },
+
     getSelectors() {
       return UISelectors;
     },
@@ -92,11 +125,15 @@ const App = (function (_ItemCtrl, _UICtrl) {
   // Add Item submit
   const itemAddSubmit = function (e) {
     // Get form input from UI Controller
-    const input = UICtrl.getItemInput();
+    const input = _UICtrl.getItemInput();
     // Check the name and calorie input.
     if (input.name !== '' && input.calories !== '') {
       // reference add item
-      const newItem = ItemCtrl.addItem(input.name, input.calories);
+      const newItem = _ItemCtrl.addItem(input.name, input.calories);
+      // add item to UI list.
+      _UICtrl.addListItem(newItem);
+      // Clear the input fields.
+      _UICtrl.clearInputFields();
     }
     e.preventDefault();
   };
@@ -114,8 +151,14 @@ const App = (function (_ItemCtrl, _UICtrl) {
     init() {
       // Fetch items from data structure.
       const items = ItemCtrl.getItems();
-      // Populate list with items.
-      _UICtrl.populateItemList(items);
+      // Check if there are any items
+      if (items.length === 0) {
+        // IF 0, hide the list.
+        _UICtrl.hideList();
+      } else {
+        // Populate list with the items.
+        _UICtrl.populateItemList(items);
+      }
       // Load event listeners.
       loadEventListeners();
     },
