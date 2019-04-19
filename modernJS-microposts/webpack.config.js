@@ -1,24 +1,24 @@
-const path = require('path');
-
 module.exports = {
   entry: {
-    app: [
-      '@babel/polyfill',
-      './src/app.js',
-    ],
-  },
-  output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'app.bundle.js',
+    vendor: './src/vendor.js',
+    main: './src/main.js',
   },
   module: {
-    rules: [{
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-           presets: ['@babel/preset-env', '@babel/preset-stage-0']
-        }
-    }]
-  }
+    rules: [
+      {
+        test: /\.html/,
+        use: ['html-loader'],
+      },
+      {
+        test: /\.(svg|png|jpg|jpeg|gif)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[hash].[ext]',
+            outputPath: 'imgs',
+          },
+        },
+      },
+    ],
+  },
 }
