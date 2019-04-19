@@ -17,17 +17,19 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     'import/no-extraneous-dependencies': 0,
+    'import/prefer-default-export': 0,
+    'prefer-default-export': 0,
+    'class-methods-use-this': 0,
+    'linebreak-style': 0,
+    'no-plusplus': 0,
+    'no-console': 0,
+    'eol-last': 0,
+    indent: 0,
+
     'lines-between-class-members': 1,
     'no-trailing-spaces': 1,
-    'linebreak-style': 0,
     'no-unused-vars': 1,
     'comma-dangle': 1,
-    'eol-last': 0,
-    'no-console': 0,
-    'spaced-comment': 1,
-    'class-methods-use-this': 1,
-    'no-plusplus': 0,
-    'class-methods-use-this': 0,
-    indent: 0
+    'spaced-comment': 1
   }
 };
