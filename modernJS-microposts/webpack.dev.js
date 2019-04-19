@@ -1,7 +1,7 @@
-const path = require('path')
-const merge = require('webpack-merge')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const common = require('./webpack.config')
+const path = require('path');
+const merge = require('webpack-merge');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const common = require('./webpack.config');
 
 module.exports = merge(common, {
   mode: 'development',
@@ -11,22 +11,16 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
-    new HtmlWebpackPlugin(
-      {
-        template: './src/index.html',
-      },
-    ),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
   ],
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
-})
+});
