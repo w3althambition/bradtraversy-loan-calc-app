@@ -8,6 +8,38 @@ class UI {
     this.forState = 'add';
   }
 
+  clearIdInput() {
+    this.idInput.value = '';
+  }
+
+  changeFormState(type) {
+    if (type === 'edit') {
+      this.postSubmit.textContent = 'Update Post';
+      this.postSubmit.className = 'post-submit btn btn-warning btn-block';
+      // Create cancel button.
+      const button = document.createElement('button');
+      button.className = 'post-cancel btn btn-light btn-block';
+      button.appendChild(document.createTextNode('Cancel Edit'));
+      // Get parent element.
+      const cardForm = document.querySelector('.card-form');
+      // Get element to insert before.
+      const formEnd = document.querySelector('.form-end');
+      // inset the cancel button.
+      cardForm.insertBefore(button, formEnd);
+    } else {
+      this.postSubmit.textContent = 'POST IT';
+      this.postSubmit.className = 'post-submit btn btn-primary btn-block';
+      // Remove cancel button, if it's there.
+      if (document.querySelector('.post-cancel')) {
+        document.querySelector('.post-cancel').remove();
+      }
+      // Clear ID from the hidden input field.
+      this.clearIdInput();
+      // Clear the input fields.
+      this.clearFields();
+    }
+  }
+
   showPosts(posts) {
     let output = '';
     posts.forEach((post) => {
@@ -61,6 +93,13 @@ class UI {
     // Clear out form fields.
     this.titleInput.value = '';
     this.bodyInput.value = '';
+  }
+
+  fillFormForEdit(data) {
+    this.titleInput.value = data.title;
+    this.bodyInput.value = data.body;
+    this.idInput.value = data.id;
+    this.changeFormState('edit');
   }
 }
 
