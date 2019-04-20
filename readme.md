@@ -2,7 +2,7 @@
 
 This repo will be dedicated to all the projects I've done from Brad Traversy's tutorials. I absolutely love his stuff and the way he teaches. These projects are both from his courses and YouTube video, both of which feature a lot of overwhelming content. He goes over everything in great detail and always opens your eyes to new things. A link to his courses can be found [here](https://www.udemy.com/user/brad-traversy/).
 
-## modernJStodotask-app
+## modernJS-todotask-app
 
 The code is fairly similar to what he gives us, I've done a slight modification to the JavaScript to minimize code duplication with es6 arrow functions.
 
@@ -14,7 +14,7 @@ Interesting features:
 
 The completed website can be viewed **[here](https://w3althambition.github.io/bradtraversy-projects-collection/modernJS-todotask-app/index.html)**.
 
-## modernJSloan-calc-app
+## modernJS-loan-calc-app
 
 Description same as the above project.
 
