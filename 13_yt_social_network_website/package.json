@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --output-style compressed -o css/ sass/style.scss -w",
+    "sass": "node-sass --output-style compressed -o dist/css/ sass/style.scss -w",
     "server": "live-server"
   },
   "keywords": [],
