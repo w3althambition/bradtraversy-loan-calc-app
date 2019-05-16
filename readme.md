@@ -126,6 +126,8 @@ Interesting features:
 
 View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/11_yt_sliding_signin_signup/index.html)**.
 
+View the tutorial **[here](https://www.youtube.com/watch?v=mUdo6w87rh4)**.
+
 ## 12_yt_autocomplete_app
 
 This project allows you to look up array data with every entry in the input field and get suggestions real-time formatted in a dropdown list. You do a fetch to local JSON data on load then you filter through the array when you type US state in the input field. This project shows a slightly better version of the function which I used in my world clock project. It's really interesting to see a new and better perspective of doing something.
@@ -135,3 +137,9 @@ Interesting features:
 - The use of autocomplete/suggestions
 
 View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/12_yt_autocomplete_app/index.html)**.
+
+View the tutorial **[here](https://www.youtube.com/watch?v=1iysNUrI3lw)**.
+
+## 13_yt_social_network_website
+
+View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/13_yt_social_network_website/dist/index.html)**.
