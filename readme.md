@@ -143,3 +143,15 @@ View the tutorial **[here](https://www.youtube.com/watch?v=1iysNUrI3lw)**.
 ## 13_yt_social_network_website
 
 View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/13_yt_social_network_website/dist/index.html)**.
+
+## 14_yt_vueJs
+
+View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/14_yt_vueJs/dist/index.html)**.
+
+## 15_npm_spotlight
+
+There is no UI preview for this project. Please see each javascript file for references.
+
+## 16_image_slider
+
+View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/16_image_slider/index.html)**.
