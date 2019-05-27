@@ -144,14 +144,22 @@ View the tutorial **[here](https://www.youtube.com/watch?v=1iysNUrI3lw)**.
 
 View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/13_yt_social_network_website/dist/index.html)**.
 
+View the tutorial **[here](https://www.youtube.com/watch?v=IFM9hbapeA0)**.
+
 ## 14_yt_vueJs
 
 To view this project you need a live server, the local preview doesn't work. Install live-server using npm install or the extension with the same name in your code editor. To preview open: /dist/index.html.
+
+View the tutorial **[here](https://youtu.be/Wy9q22isx3U)**.
 
 ## 15_npm_spotlight
 
 There is no UI preview for this project. Please see each javascript file for references.
 
+View the tutorial **[here](https://youtu.be/ON3I5N3PZKs)**.
+
 ## 16_image_slider
 
 View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/16_image_slider/index.html)**.
+
+View the tutorial **[here](https://youtu.be/7ZO2RTMNSAY)**.
