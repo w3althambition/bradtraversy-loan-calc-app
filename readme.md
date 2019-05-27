@@ -163,3 +163,9 @@ View the tutorial **[here](https://youtu.be/ON3I5N3PZKs)**.
 View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/16_image_slider/index.html)**.
 
 View the tutorial **[here](https://youtu.be/7ZO2RTMNSAY)**.
+
+## 17_netflix_landing
+
+View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/17_netflix_landing/index.html)**.
+
+View the tutorial **[here](https://youtu.be/P7t13SGytRk)**.
