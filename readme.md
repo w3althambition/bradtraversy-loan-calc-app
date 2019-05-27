@@ -146,7 +146,7 @@ View the completed project **[here](https://w3althambition.github.io/bradtravers
 
 ## 14_yt_vueJs
 
-View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/14_yt_vueJs/dist/index.html)**.
+To view this project you need a live server, the local preview doesn't work. Install live-server using npm install or the extension with the same name in your code editor. To preview open: /dist/index.html.
 
 ## 15_npm_spotlight
 
