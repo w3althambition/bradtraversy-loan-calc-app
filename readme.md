@@ -169,3 +169,9 @@ View the tutorial **[here](https://youtu.be/7ZO2RTMNSAY)**.
 View the completed project **[here](https://w3althambition.github.io/bradtraversy-projects-collection/17_netflix_landing/index.html)**.
 
 View the tutorial **[here](https://youtu.be/P7t13SGytRk)**.
+
+## 18_vuex
+
+View the completed project -- you can't view it here. To view it, you need to download, then run build and then open the index.html in dist with live-server.
+
+View the tutorial **[here](https://youtu.be/5lVQgZzLMHc)**.
