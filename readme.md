@@ -172,6 +172,10 @@ View the tutorial **[here](https://youtu.be/P7t13SGytRk)**.
 
 ## 18_vuex
 
-View the completed project -- you can't view it here. To view it, you need to download, then run build and then open the index.html in dist with live-server.
+View the completed project -- you can't view it here. To view it, you need to download, then run build and then open the index.html in the dist folder with live-server.
 
 View the tutorial **[here](https://youtu.be/5lVQgZzLMHc)**.
+
+## 19_TypeScript
+
+View the tutorial **[here](https://youtu.be/rAy_3SIqT-E)**.
