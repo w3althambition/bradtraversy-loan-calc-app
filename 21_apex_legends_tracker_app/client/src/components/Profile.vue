@@ -23,17 +23,16 @@ export default {
 		this.loading = true;
 
 		try {
-			const responsive = await axios.get(
-				`http://localhost:5000/app/v1/profile/${this.$route.params.platform}/${this.$route.params.gamertag}`
+			const res = await axios.get(
+				`/app/v1/profile/${this.$route.params.platform}/${this.$route.params.gamertag}`
 			);
 
 			this.profileData = res.data.data;
 			console.log(this.profileData);
-      this.loading = false;
-
+			this.loading = false;
 		} catch (err) {
 			this.loading = false;
-			this.error = err.responsive.data.message;
+			this.error = err.response.data.message;
 		}
 	}
 };

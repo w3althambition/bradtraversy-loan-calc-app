@@ -14,7 +14,7 @@ export default new Router({
 			component: Search,
 		},
 		{
-			path: '/profile/:platform/:gamerteg',
+			path: '/profile/:platform/:gamertag',
 			name: 'profile',
 			component: Profile,
 		},
