@@ -182,4 +182,8 @@ View the tutorial **[here](https://youtu.be/rAy_3SIqT-E)**.
 
 ## 20_product_landing_page_netlify
 
-View the tutorial **[here](https://www.youtube.com/watch?v=61R5kn_kYwY)**.
+View the tutorial **[here](https://youtu.be/61R5kn_kYwY)**.
+
+## 22_react-js-crash-course
+
+View the tutorial **[here](https://youtu.be/sBws8MSXN7A)**.
