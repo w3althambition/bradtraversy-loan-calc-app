@@ -187,3 +187,7 @@ View the tutorial **[here](https://youtu.be/61R5kn_kYwY)**.
 ## 22_react-js-crash-course
 
 View the tutorial **[here](https://youtu.be/sBws8MSXN7A)**.
+
+## 23_react_tailwind_css_gallery
+
+View the tutorial **[here](https://youtu.be/FiGmAI5e91M)**.
