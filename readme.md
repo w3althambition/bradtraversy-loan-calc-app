@@ -95,3 +95,12 @@ View the tutorial **[here](https://youtu.be/sBws8MSXN7A)**.
 ## 23_react_tailwind_css_gallery
 
 View the tutorial **[here](https://youtu.be/FiGmAI5e91M)**.
+
+## 24_parallax_landing_rellax_js
+
+View the tutorial **[here](https://youtu.be/aAxt0Z7IXIo)**.
+
+
+## 25_presentation_slide_website
+
+View the tutorial **[here](https://youtu.be/uE1m21Umn0s)**.
