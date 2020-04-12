@@ -104,3 +104,7 @@ View the tutorial **[here](https://youtu.be/aAxt0Z7IXIo)**.
 ## 25_presentation_slide_website
 
 View the tutorial **[here](https://youtu.be/uE1m21Umn0s)**.
+
+## 26_microsoft_homepage_clone
+
+View the tutorial **[here](https://youtu.be/uKgn-To1C4Q)**.
