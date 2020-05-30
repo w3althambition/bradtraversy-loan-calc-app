@@ -113,3 +113,7 @@ View the tutorial **[here](https://youtu.be/uKgn-To1C4Q)**.
 
 View the tutorial **[here](https://youtu.be/-qOe8lBAChE)**.
 
+## 28_simple_machine_learning_with_brain_js
+
+View the tutorial **[here](https://youtu.be/RVMHhtTqUxc)**.
+
