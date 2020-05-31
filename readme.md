@@ -117,3 +117,6 @@ View the tutorial **[here](https://youtu.be/-qOe8lBAChE)**.
 
 View the tutorial **[here](https://youtu.be/RVMHhtTqUxc)**.
 
+## 29_animated_counter_with_js
+
+View the tutorial **[here](https://youtu.be/a6XIMIKmj9k)**.
