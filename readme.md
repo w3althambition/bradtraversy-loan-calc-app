@@ -121,7 +121,6 @@ View the tutorial **[here](https://youtu.be/RVMHhtTqUxc)**.
 
 View the tutorial **[here](https://youtu.be/a6XIMIKmj9k)**.
 
-## 30_blog_cards
-## 31_basic_logic
+## basic tutorial: 30_blog_cards, 31_basic_logic, 32_ads_manager
 
-View the tutorials **[here](https://www.youtube.com/watch?v=6EajwhCNLfc)**.
+View the tutorial **[here](https://www.youtube.com/watch?v=6EajwhCNLfc)**.
