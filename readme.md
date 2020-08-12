@@ -120,3 +120,8 @@ View the tutorial **[here](https://youtu.be/RVMHhtTqUxc)**.
 ## 29_animated_counter_with_js
 
 View the tutorial **[here](https://youtu.be/a6XIMIKmj9k)**.
+
+## 30_blog_cards
+## 31_basic_logic
+
+View the tutorials **[here](https://www.youtube.com/watch?v=6EajwhCNLfc)**.
